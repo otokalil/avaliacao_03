@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Pessoa {
+  char name [50]
+  int age;
+};
+
+int main () {
+  struct Pessoa Pessoa
+
+printf("oto: ")
+fgets(pessoa.name, sizeof(pessoa.name) , stdin);
+
+printf("18: ")
+scanf("%d", &pessoa.age);
+
+FILE *arquivo = fopen("pessoa.dat" , "wb" );
+if (arquivo = NULL) {
+  perror ("erro ao escrever o arquivo" );
+   return 1;
+}
+
+if (fwritw(&pessoa, sizeof(struct pesooa) , 1, arquivo ) ! = 1) {
+  perror("Erro ao escrever no arquivo");
+        fclose(arquivo);
+        return 1;
+    }
+
+    printf("Dados gravados com sucesso no arquivo 'pessoa.dat'\n");
+
+    fclose(arquivo);
+
+    return 0;
